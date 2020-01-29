@@ -2,10 +2,10 @@ package com.example.cluber.models;
 
 
 // usa retrofit y trae los model del DAO
-public class BolicheInteractor {
+public class ClubInteractor {
 
     public interface bolicheQueryData{
-      void  onSucces(Boliche bolicheData);
+      void  onSucces(Club clubData);
       void  onFailure();
     }
 

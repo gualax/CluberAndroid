@@ -1,0 +1,30 @@
+{
+  "clubs":[
+  {
+    "name": "Gino",
+    "city": "Ramos",
+    "capacity": 150
+  },
+  {
+    "name": "Jagger",
+    "city": "Moron",
+    "capacity": 300
+  },
+  {
+    "name": "Jagger",
+    "city": "Moron",
+    "capacity": 300
+  },
+  {
+    "name": "ClubLeloir",
+    "city": "Ituzaingo",
+    "capacity": 300
+  },
+  {
+    "name": "Brook",
+    "city": "Palermo",
+    "capacity": 300
+  }
+]
+}
+

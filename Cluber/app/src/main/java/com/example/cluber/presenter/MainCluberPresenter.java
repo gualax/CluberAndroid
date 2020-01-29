@@ -3,24 +3,24 @@ package com.example.cluber.presenter;
 import androidx.annotation.NonNull;
 
 import com.example.cluber.base.BasePresenter;
-import com.example.cluber.models.Boliche;
-import com.example.cluber.models.BolicheInteractor;
+import com.example.cluber.models.Club;
+import com.example.cluber.models.ClubInteractor;
 import com.example.cluber.view.interfaces.MainClubberInterface;
 
-public class MainCluberPresenter extends BasePresenter implements BolicheInteractor.bolicheQueryData {
+public class MainCluberPresenter extends BasePresenter implements ClubInteractor.bolicheQueryData {
 
     private  MainClubberInterface.view view;
-    private  BolicheInteractor interactor;
-    public MainCluberPresenter(@NonNull MainClubberInterface.view view, BolicheInteractor interactor) {
+    private ClubInteractor interactor;
+    public MainCluberPresenter(@NonNull MainClubberInterface.view view, ClubInteractor interactor) {
           this.view = view;
           this.interactor = interactor;
     }
 
 
     //callback de succes del interactor disparado cuando pudo buscar los datos
-    //y los mismos estan en bolicheData
+    //y los mismos estan en clubData
     @Override
-    public void onSucces(Boliche bolicheData) {
+    public void onSucces(Club clubData) {
         //mostrar datos
         //view.show
     }
