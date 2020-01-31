@@ -6,8 +6,11 @@ public class Club {
 
     private String name;
     private String city;
+    private String address;
     private int capacity;
     private ImageView image;
+    private String imageName;
+
 
     public Club() {}
 
@@ -20,6 +23,21 @@ public class Club {
         this.name = name;
     }
 
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
+    }
 
     public void setImage(ImageView image){
         this.image = image;

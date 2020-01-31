@@ -51,14 +51,14 @@ public class MainCluberActivity extends BaseActivity<MainCluberPresenter> implem
         mRecyclerView.setLayoutManager( new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         clubList = new ArrayList<Club>();
 
-       populateList(clubList);
+       populateListByJsonFile(clubList);
 
        ClubAdapter clubAdapter =  new ClubAdapter(clubList);
        mRecyclerView.setAdapter(clubAdapter);
 //       clubAdapter.notifyDataSetChanged();
    }
 
-    private void populateList(ArrayList<Club> clubList) {
+    private void populateListByJsonFile(ArrayList<Club> clubList) {
         Log.d("CLUBER","populateList");
         InputStream is = getResources().openRawResource(R.raw.club_sample_data);
         String jsonString = new Scanner(is).useDelimiter("\\A").next();
@@ -70,8 +70,11 @@ public class MainCluberActivity extends BaseActivity<MainCluberPresenter> implem
             for(int i=0;i<jsonArray.length();i++){
                 JSONObject obj=new JSONObject(jsonArray.get(i).toString());
                 Club club = new Club();
-                Log.d("CLUBER",obj.getString("name"));
                 club.setName(obj.getString("name"));
+                club.setCity(obj.getString("city"));
+                club.setAddress(obj.getString("address"));
+                club.setCapacity(obj.getInt("capacity"));
+                club.setImageName(obj.getString("img"));
                 clubList.add(club);
             }
         } catch (JSONException e) {
@@ -104,5 +107,9 @@ public class MainCluberActivity extends BaseActivity<MainCluberPresenter> implem
     @Override
     public void searchInfo() {
 
+    }
+
+    public Context getAppContext(){
+       return  this;
     }
 }

@@ -5,6 +5,7 @@
     "city": "Ramos mejia",
     "address": "Av.Rivadavia 1234",
     "capacity": 150,
+    "img": "gino_club" ,
     "price": 4
   },
   {
@@ -12,6 +13,7 @@
     "city": "Moron",
     "address": "Av.Rivadavia 1234",
     "capacity": 300,
+    "img": "jagger_club" ,
     "price": 3
   },
   {
@@ -19,6 +21,7 @@
     "city": "Ramos mejia",
     "address": "Av.Rivadavia 1234",
     "capacity": 300,
+    "img": "nitro_club" ,
     "price": 2
   },
   {
@@ -26,6 +29,7 @@
     "city": "Ituzaingo",
     "address": "Av.Rivadavia 1234",
     "capacity": 300,
+    "img": "club_leloir" ,
     "price": 3
   },
   {
@@ -33,6 +37,7 @@
     "city": "Palermo",
     "address": "Av.Rivadavia 1234",
     "capacity": 300,
+    "img": "broock_club" ,
     "price": 5
   }
 ]
