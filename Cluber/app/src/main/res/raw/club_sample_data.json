@@ -2,28 +2,38 @@
   "clubs":[
   {
     "name": "Gino",
-    "city": "Ramos",
-    "capacity": 150
+    "city": "Ramos mejia",
+    "address": "Av.Rivadavia 1234",
+    "capacity": 150,
+    "price": 4
   },
   {
     "name": "Jagger",
     "city": "Moron",
-    "capacity": 300
+    "address": "Av.Rivadavia 1234",
+    "capacity": 300,
+    "price": 3
   },
   {
-    "name": "Jagger",
-    "city": "Moron",
-    "capacity": 300
+    "name": "Nitro",
+    "city": "Ramos mejia",
+    "address": "Av.Rivadavia 1234",
+    "capacity": 300,
+    "price": 2
   },
   {
     "name": "ClubLeloir",
     "city": "Ituzaingo",
-    "capacity": 300
+    "address": "Av.Rivadavia 1234",
+    "capacity": 300,
+    "price": 3
   },
   {
     "name": "Brook",
     "city": "Palermo",
-    "capacity": 300
+    "address": "Av.Rivadavia 1234",
+    "capacity": 300,
+    "price": 5
   }
 ]
 }
