@@ -3,24 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-
     <item
         android:id="@+id/action_recents"
         android:enabled="true"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="Recents"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Clubs"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_favorites"
         android:enabled="true"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="Favorites"
+        android:icon="@android:drawable/ic_input_get"
+        android:title="Reservas"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_nearby"
         android:enabled="true"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="Nearby"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Perfil"
         app:showAsAction="ifRoom" />
 
 

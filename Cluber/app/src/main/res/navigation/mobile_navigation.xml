@@ -3,23 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
-
+    app:startDestination="@id/clubsFragment">
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.cluber.view.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/clubsFragment"
+        android:name="com.example.cluber.view.ClubListFragment"
+        android:label="main_clubber_view"
+        tools:layout="@layout/main_clubber_view" >
+        <action
+            android:id="@+id/action_clubsFragment_to_clubInformationFragment"
+            app:destination="@id/clubInformationFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.cluber.view.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/clubInformationFragment"
+        android:name="com.example.cluber.view.ClubInformationFragment"
+        android:label="to_club_information"
+        tools:layout="@layout/club_info_fragment">
+        <argument
+            android:name="clubString"
+            app:argType="string" />
+    </fragment>
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.cluber.view.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
 </navigation>
